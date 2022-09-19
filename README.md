@@ -1,7 +1,5 @@
 # css-animation-material
 
-Various of css animation material.
+Various of css animated components gallery.
 
-## Section
-
-#### 1. [Buttons](/src/buttons)
+[Demo](https://kurt-liao.github.io/css-animation-gallery/)
