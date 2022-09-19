@@ -1,0 +1,209 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 40px 80px;
+  font-size: 36px;
+}
+
+#button1 {
+  border: 5px solid #171717;
+  position: relative;
+  overflow: hidden;
+}
+
+#button1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 100%;
+  background: yellow;
+  z-index: -1;
+  transform-origin: right bottom;
+  transform: rotate(-90deg);
+  transition: transform 0.5s;
+}
+
+#button1:hover:before {
+  transform: rotate(-360deg);
+}
+
+#button2 {
+  border: 5px solid #351435;
+  color: #351435;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+#button2:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #351435;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+#button2:hover {
+  color: #fff;
+}
+
+#button2:hover:before {
+  transform: translateX(0);
+}
+
+#button3 {
+  position: relative;
+  border: 5px solid #262626;
+  color: #262626;
+  transition: all 1s;
+  color: #fff;
+}
+
+#button3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #262626;
+  z-index: -1;
+  transition: all 1s;
+}
+
+#button3:hover:before {
+  transform: rotateX(90deg);
+}
+
+#button3:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #262626;
+  z-index: -1;
+  transition: all 1s;
+}
+
+#button3:hover:after {
+  transform: rotateY(90deg);
+}
+
+#button3:hover {
+  color: #262626;
+}
+
+#button4 {
+  border: 3px solid #e1332d;
+  color: #e1332d;
+  text-transform: uppercase;
+  font-weight: 300px;
+  letter-spacing: -2px;
+  transition: all 0.5s;
+}
+
+#button4:hover {
+  font-weight: 900;
+  letter-spacing: 8px;
+  border: 5px solid #e1332d;
+}
+
+#button5 {
+  border: 3px solid #cccecf;
+  color: #cccecf;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+#button5:before {
+  content: "Hello";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #bbff33;
+  transform: translateY(-100%);
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button5:hover:before {
+  transform: translateY(0);
+  color: #33afff;
+}
+
+#button6 {
+  border: 3px solid #ca6eff;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+  color: #ca6eff;
+}
+
+#button6:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ca6eff;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: rotateX(90deg);
+  transition: all 1.5s;
+}
+
+#button6:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ca6eff;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: rotateY(90deg);
+  transition: all 1.5s;
+}
+
+#button6:hover:before {
+  transform: rotateX(0);
+}
+
+#button6:hover:after {
+  transform: rotateY(0);
+}
+
+#button6:hover {
+  color: #ddbdd5;
+  border: 3px solid #ddbdd5;
+}
